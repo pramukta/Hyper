@@ -35,7 +35,7 @@ Map[Set[TAGDEFAULTS[Evaluate[Symbol[#]]], {}] &, TAGS];
 
 EMPTY = "";
 
-TAGDEFAULTS[html] = {"xmlns" -> "http //www.w3.org/1999/xhtml"};
+TAGDEFAULTS[html] = {"xmlns" -> "http://www.w3.org/1999/xhtml"};
 
 (* H builds a symbolic XML tree out of the Mathematica syntax tree *)
 H[element_String] := element;
