@@ -27,39 +27,44 @@ TAGS = {"a", "abbr", "acronym", "address", "applet", "area", "b", "base", "basef
 	"s", "samp", "script", "select", "small", "span", "strike", "strong", "style", "sub", "sup", "table", "tbody",
 	"td", "textarea", "tfoot", "th", "thead", "title", "tr", "tt", "u", "ul", "var"};
 	
-(* dynamically create generic functions for all tags *)
-Map[
-	SetDelayed[
-		Evaluate[Symbol[#]][attrib_List, elements___],
-		XMLElement[#, attrib, Flatten @ List @ elements]
-	] &, 
-	TAGS
-];
+(* In case they are defined elsewhere, suspend evaluation of HTML tag symbols *)
+Map[SetAttributes[Evaluate[Symbol[#]], HoldAll] &, TAGS];
 
-(* dynamically create single argument functions for all tags *)
-Map[
-	SetDelayed[
-		Evaluate[Symbol[#]][elements___],
-		XMLElement[#, {}, Flatten @ List @ elements]
-	] &, 
-	TAGS
-];
+(* Build an initial set of empty tag attribute defaults *)
+Map[Set[TAGDEFAULTS[Evaluate[Symbol[#]]], {}] &, TAGS];
 
-(* override specific tags with more specific functionality *)
-html[elements___] := html[{"xmlns" -> "http://www.w3.org/1999/xhtml"}, elements];
+EMPTY = "";
 
+TAGDEFAULTS[html] = {"xmlns" -> "http //www.w3.org/1999/xhtml"};
 
+(* H builds a symbolic XML tree out of the Mathematica syntax tree *)
+H[element_String] := element;
+H[elements__] := Map[H, List@elements];
+H[element_] := Module[{hasAttributes = Head[element[[1]]] === List},
+	XMLElement[SymbolName[Head[element]],
+    	If[hasAttributes, MergeRules[element[[1]], TAGDEFAULTS[Head[element]]], TAGDEFAULTS[Head[element]]],
+    	If[hasAttributes, Map[H, List @@ element[[2 ;;]]], 
+     	List @@ Map[H, element[[1 ;;]]]]
+    	]
+   	];
 
-(* basic generation functions *)
-HyperGen[doc_] := 
-	If[HValidQ[doc],
-		ExportString[doc,"XML"],
-		EmptyDoc
+W[doc_] := XMLObject["Document"][
+		{
+			XMLObject["Declaration"]["Version" -> "1.0", "Encoding" -> "UTF-8"],
+			XHtmlStrict
+		},
+		doc,
+		{}
 	];
+T[doc_] := ExportString[W[doc], "XML"];
+
+MergeRules[rules_List, default_List] :=
+	DeleteDuplicates[
+ 		Join[rules, default], (* order matters *)
+ 		First[#1] === First[#2] &
+ 	];
 
 
-(* validation functions *)
-HValidQ[doc_] := Head[doc] === XMLObject["Document"];
 
 Begin["`Private`"]
 (* Implementation of the package *)
