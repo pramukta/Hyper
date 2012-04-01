@@ -2,6 +2,10 @@
 
 (* Created by the Wolfram Workbench Mar 24, 2012 *)
 
+Needs["JLink`"];
+InstallJava[];
+
+
 BeginPackage["Hyper`"]
 (* Exported symbols added here with SymbolName::usage *) 
 
@@ -60,6 +64,8 @@ TWH[doc_] := T @ W @ H[doc];
 
 Begin["`Private`"]
 (* Implementation of the package *)
+LoadJavaClass["java.net.URLEncoder"];
+
 MergeRules[rules_List, default_List] :=
 	DeleteDuplicates[
  		Join[rules, default], (* order matters *)
@@ -70,6 +76,9 @@ DeleteEmptyRules[rules_List] :=
 	DeleteCases[rules, Part[#, 2] == EMPTY &];
 
 End[]
+
+Get["`M`"]
+
 
 EndPackage[]
 

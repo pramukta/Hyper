@@ -10,19 +10,27 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      3013,         82]
-NotebookOptionsPosition[      2684,         65]
-NotebookOutlinePosition[      3041,         81]
-CellTagsIndexPosition[      2998,         78]
+NotebookDataLength[      6628,        172]
+NotebookOptionsPosition[      5928,        143]
+NotebookOutlinePosition[      6284,        159]
+CellTagsIndexPosition[      6241,        156]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"<<", "Hyper`"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.5417731084043207`*^9, 3.541773127320238*^9}, {
+  3.541773192462838*^9, 3.541773212829308*^9}}],
 
 Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{"T", " ", "@", " ", 
-  RowBox[{"H", "[", "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"TWH", "@", "\[IndentingNewLine]", 
    RowBox[{"html", "[", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"head", "[", "EMPTY", "]"}], ",", "\[IndentingNewLine]", 
@@ -38,9 +46,11 @@ Cell[BoxData[
           "\"\<href\>\"", " ", "\[Rule]", " ", 
            "\"\<http://www.google.com\>\""}], "}"}], ",", 
          "\[IndentingNewLine]", 
-         RowBox[{"h1", "[", "\"\<Fuck Yeah!!!\>\"", "]"}]}], 
+         RowBox[{"h1", "[", 
+          RowBox[{"\"\<Fuck Yeah!!!\>\"", ",", " ", 
+           RowBox[{"span", "[", "\"\<and then some\>\"", "]"}]}], "]"}]}], 
         "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}]}]], "Input",
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.541714531861424*^9, 3.5417145440801287`*^9}, {
   3.541714575240286*^9, 3.541714576112623*^9}, {3.541714630295059*^9, 
   3.541714630993952*^9}, {3.541715418534177*^9, 3.5417155140193577`*^9}, {
@@ -48,23 +58,91 @@ Cell[BoxData[
   3.541715968380286*^9}, {3.5417167965395*^9, 3.5417167966084347`*^9}, {
   3.541716835626095*^9, 3.54171684161007*^9}, {3.541716877538926*^9, 
   3.541716877726585*^9}, {3.541716967447681*^9, 3.541716993627317*^9}, {
-  3.5417171037390423`*^9, 3.541717104805303*^9}}],
+  3.5417171037390423`*^9, 3.541717104805303*^9}, {3.5417173905681973`*^9, 
+  3.541717397226534*^9}, {3.541763322829894*^9, 3.541763328531733*^9}, {
+  3.5417634300420732`*^9, 3.5417634347603827`*^9}, {3.541763483863991*^9, 
+  3.541763503518848*^9}, {3.5417704122040443`*^9, 3.541770440129875*^9}}],
 
 Cell[BoxData["\<\"<?xml version='1.0' encoding='UTF-8'?>\\n<!DOCTYPE html \
 PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' \
-'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>\\n<html xmlns='http \
-//www.w3.org/1999/xhtml'>\\n <head></head>\\n <body bgcolor='#ffffff'>\\n  <a \
-href='http://www.google.com'>\\n   <h1>Fuck Yeah!!!</h1>\\n  </a>\\n \
-</body>\\n</html>\"\>"], "Output",
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>\\n<html \
+xmlns='http://www.w3.org/1999/xhtml'>\\n <head></head>\\n <body \
+bgcolor='#ffffff'>\\n  <a href='http://www.google.com'>\\n   <h1>Fuck \
+Yeah!!!<span>and then some</span></h1>\\n  </a>\\n </body>\\n</html>\"\>"], \
+"Output",
  CellChangeTimes->{
   3.5417154801738167`*^9, 3.5417155152582903`*^9, 3.5417158971676683`*^9, 
    3.541715969127378*^9, {3.541716822083975*^9, 3.541716842235236*^9}, 
    3.541716878161333*^9, 3.541716916450856*^9, {3.541716968346203*^9, 
-   3.54171699412995*^9}, {3.541717097789473*^9, 3.541717105598164*^9}}]
-}, Open  ]]
+   3.54171699412995*^9}, {3.541717097789473*^9, 3.541717105598164*^9}, 
+   3.541717400211466*^9, 3.541763452198419*^9, 3.541763504895646*^9, {
+   3.5417704172598248`*^9, 3.541770441197241*^9}, 3.541773043683929*^9, 
+   3.5417733379492483`*^9, 3.5417734819834623`*^9, 3.542218086673245*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UrlEncode", "[", "\"\<how-many- things\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.5422181026893578`*^9, 3.542218112352456*^9}}],
+
+Cell[BoxData["\<\"how-many-+things\"\>"], "Output",
+ CellChangeTimes->{3.5422181127710247`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"<<", "GUIKit`"}], "\[IndentingNewLine]", 
+ RowBox[{"GUIRun", "[", 
+  RowBox[{"Widget", "[", "\"\<Panel\>\"", "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.54222176571706*^9, 3.542221794082159*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Widget", "::", "shdw"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Symbol \[NoBreak]\\!\\(\\\"Widget\\\"\\)\[NoBreak] appears \
+in multiple contexts \[NoBreak]\\!\\({\\\"GUIKit`\\\", \\\"Global`\\\"}\\)\
+\[NoBreak]; definitions in context \[NoBreak]\\!\\(\\\"GUIKit`\\\"\\)\
+\[NoBreak] may shadow or be shadowed by other definitions. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/shdw\\\", \
+ButtonNote -> \\\"GUIKit`Widget::shdw\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.542221795454637*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"GUIRun", "::", "shdw"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Symbol \[NoBreak]\\!\\(\\\"GUIRun\\\"\\)\[NoBreak] appears \
+in multiple contexts \[NoBreak]\\!\\({\\\"GUIKit`\\\", \\\"Global`\\\"}\\)\
+\[NoBreak]; definitions in context \[NoBreak]\\!\\(\\\"GUIKit`\\\"\\)\
+\[NoBreak] may shadow or be shadowed by other definitions. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/shdw\\\", \
+ButtonNote -> \\\"GUIKit`GUIRun::shdw\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.542221795543865*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\[SkeletonIndicator]", "GUIObject", "\[SkeletonIndicator]"}],
+  GUIKit`GUIObject[
+  JLink`Objects`vm1`JavaObject9674718391042049, 
+   JLink`Objects`vm1`JavaObject20956197838389249]]], "Output",
+ CellChangeTimes->{{3.54222178031604*^9, 3.542221798186021*^9}}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"OptionsPattern", "[", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Options", "[", "f", 
+  "]"}], "\[IndentingNewLine]", "OptionValue"}], "Input",
+ CellChangeTimes->{{3.542224774738406*^9, 3.54222478747155*^9}}]
 },
 WindowSize->{740, 756},
-WindowMargins->{{Automatic, 391}, {127, Automatic}},
+WindowMargins->{{59, Automatic}, {105, Automatic}},
 FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
 2011)",
 StyleDefinitions->"Default.nb"
@@ -80,10 +158,22 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[557, 20, 279, 6, 43, "Input"],
 Cell[CellGroupData[{
-Cell[579, 22, 1396, 28, 163, "Input"],
-Cell[1978, 52, 690, 10, 178, "Output"]
-}, Open  ]]
+Cell[861, 30, 1716, 33, 163, "Input"],
+Cell[2580, 65, 936, 14, 178, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3553, 84, 153, 2, 27, "Input"],
+Cell[3709, 88, 95, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3841, 94, 223, 4, 43, "Input"],
+Cell[4067, 100, 651, 12, 41, "Message"],
+Cell[4721, 114, 651, 12, 40, "Message"],
+Cell[5375, 128, 303, 6, 27, "Output"]
+}, Open  ]],
+Cell[5693, 137, 231, 4, 58, "Input"]
 }
 ]
 *)
