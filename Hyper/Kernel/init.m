@@ -1,3 +1,3 @@
 (* Mathematica Init File *)
 
-Get[ "Hyper`Hyper`"]
+Get[ "Hyper`"]

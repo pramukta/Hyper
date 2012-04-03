@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      6628,        172]
-NotebookOptionsPosition[      5928,        143]
-NotebookOutlinePosition[      6284,        159]
-CellTagsIndexPosition[      6241,        156]
+NotebookDataLength[     15898,        443]
+NotebookOptionsPosition[     14223,        383]
+NotebookOutlinePosition[     14561,        398]
+CellTagsIndexPosition[     14518,        395]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,54 +22,133 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"<<", "Hyper`"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
+  RowBox[{"<<", "Hyper`Util`"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"<<", "Hyper`Macro`"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], ";"}]}], "Input",
  CellChangeTimes->{{3.5417731084043207`*^9, 3.541773127320238*^9}, {
-  3.541773192462838*^9, 3.541773212829308*^9}}],
+  3.541773192462838*^9, 3.541773212829308*^9}, {3.542452386030871*^9, 
+  3.542452399863908*^9}, {3.542452451776696*^9, 3.542452452417584*^9}, {
+  3.542460835385927*^9, 3.54246084114692*^9}, {3.5424658800706778`*^9, 
+  3.5424658875449266`*^9}, {3.542466301815853*^9, 3.542466308856237*^9}, {
+  3.54246643864102*^9, 3.542466439282069*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"TWH", "@", "\[IndentingNewLine]", 
-   RowBox[{"html", "[", "\[IndentingNewLine]", 
+ RowBox[{"Html", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"head", "[", "\"\<\>\"", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"body", "[", 
     RowBox[{
-     RowBox[{"head", "[", "EMPTY", "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"body", "[", 
+     RowBox[{"{", 
+      RowBox[{"\"\<bgcolor\>\"", " ", "\[Rule]", " ", "\"\<#ffffff\>\""}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Img", "@", " ", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"Sin", "[", "x", "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", " ", "0", ",", " ", 
+          RowBox[{"4", " ", "\[Pi]"}]}], "}"}]}], "]"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Img", "[", "\"\<http://www.awesomeimages.com/1.png\>\"", "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"a", "[", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{"\"\<bgcolor\>\"", " ", "\[Rule]", " ", "\"\<#ffffff\>\""}], 
-        "}"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"a", "[", 
         RowBox[{
+        "\"\<href\>\"", " ", "\[Rule]", " ", 
+         "\"\<http://www.google.com\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"h1", "[", 
+        RowBox[{"\"\<Fuck Yeah!!!\>\"", ",", " ", 
+         RowBox[{"span", "[", "\"\<and then some\>\"", "]"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJwdxU0ogwEABuC12SjbaiSt0FYrpMhfVjQbaYbkt0aSZgwRMpIxU8yoMZHD
+0nBgtbZsbOHo77A2YqUclKy0rBEHEWv53u/w9PAVw009VAqFkk7AXpPGX90d
+lgyYqDd40Bm6w1tmWgDzRr0PWH3zRP6b2lgqI96wiKW4L8pXY2YkTC47eJ3F
+9TlMHd6sXAvhusl18p8EdQQfLhS+4aDI9YnzxMfkqub3KP5LKqLUEJftf7Nw
+4hWXje25gXx8WW4twNqV9u0u4i8aZwfb5Gd2zG6VO/DtnuYIq8wfHmxY1Kco
+iT8y47hYt2QRuZVhiVv8SG6ILcuw/4lei+d+RAwPscKij8e3Y1omvhAGOTh2
+LsjGbe4pcnMxvQRf+6eEeLe3oQon3O+ST68K+7Ev1DKEBffUcWy0tkxgR+fj
+zjFxh6/Uhkf2MpyYd8py4RdjFv2EmPE8T14xQ+PgqDQtGf8DGUvo0g==
+  "]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"XMLObject", "[", "\<\"Document\"\>", "]"}], "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"XMLObject", "[", "\<\"Declaration\"\>", "]"}], "[", 
+      RowBox[{
+       RowBox[{"\<\"Version\"\>", "\[Rule]", "\<\"1.0\"\>"}], ",", 
+       RowBox[{"\<\"Encoding\"\>", "\[Rule]", "\<\"UTF-8\"\>"}]}], "]"}], ",", 
+     RowBox[{
+      RowBox[{"XMLObject", "[", "\<\"Doctype\"\>", "]"}], "[", 
+      RowBox[{"\<\"html\"\>", ",", 
+       RowBox[{"\<\"Public\"\>", 
+        "\[Rule]", "\<\"-//W3C//DTD XHTML 1.0 Strict//EN\"\>"}], ",", 
+       RowBox[{"\<\"System\"\>", 
+        "\[Rule]", \
+"\<\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"\>"}]}], "]"}]}], 
+    "}"}], ",", 
+   RowBox[{"XMLElement", "[", 
+    RowBox[{"\<\"html\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"xmlns\"\>", 
+       "\[Rule]", "\<\"http://www.w3.org/1999/xhtml\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"XMLElement", "[", 
+        RowBox[{"\<\"head\"\>", ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "\<\"\"\>", "}"}]}], "]"}], ",", 
+       RowBox[{"XMLElement", "[", 
+        RowBox[{"\<\"body\"\>", ",", 
+         RowBox[{"{", 
+          RowBox[{"\<\"bgcolor\"\>", "\[Rule]", "\<\"#ffffff\"\>"}], "}"}], 
+         ",", 
          RowBox[{"{", 
           RowBox[{
-          "\"\<href\>\"", " ", "\[Rule]", " ", 
-           "\"\<http://www.google.com\>\""}], "}"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"h1", "[", 
-          RowBox[{"\"\<Fuck Yeah!!!\>\"", ",", " ", 
-           RowBox[{"span", "[", "\"\<and then some\>\"", "]"}]}], "]"}]}], 
-        "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.541714531861424*^9, 3.5417145440801287`*^9}, {
-  3.541714575240286*^9, 3.541714576112623*^9}, {3.541714630295059*^9, 
-  3.541714630993952*^9}, {3.541715418534177*^9, 3.5417155140193577`*^9}, {
-  3.5417158730620613`*^9, 3.5417158793413143`*^9}, {3.541715967302647*^9, 
-  3.541715968380286*^9}, {3.5417167965395*^9, 3.5417167966084347`*^9}, {
-  3.541716835626095*^9, 3.54171684161007*^9}, {3.541716877538926*^9, 
-  3.541716877726585*^9}, {3.541716967447681*^9, 3.541716993627317*^9}, {
-  3.5417171037390423`*^9, 3.541717104805303*^9}, {3.5417173905681973`*^9, 
-  3.541717397226534*^9}, {3.541763322829894*^9, 3.541763328531733*^9}, {
-  3.5417634300420732`*^9, 3.5417634347603827`*^9}, {3.541763483863991*^9, 
-  3.541763503518848*^9}, {3.5417704122040443`*^9, 3.541770440129875*^9}}],
-
-Cell[BoxData["\<\"<?xml version='1.0' encoding='UTF-8'?>\\n<!DOCTYPE html \
-PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' \
-'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>\\n<html \
-xmlns='http://www.w3.org/1999/xhtml'>\\n <head></head>\\n <body \
-bgcolor='#ffffff'>\\n  <a href='http://www.google.com'>\\n   <h1>Fuck \
-Yeah!!!<span>and then some</span></h1>\\n  </a>\\n </body>\\n</html>\"\>"], \
-"Output",
+           RowBox[{"XMLElement", "[", 
+            RowBox[{"\<\"img\"\>", ",", 
+             RowBox[{"{", 
+              
+              RowBox[{"\<\"src\"\>", 
+               "\[Rule]", "\<\"/tmp/m00001666431.png\"\>"}], "}"}], ",", 
+             RowBox[{"{", "\<\"\"\>", "}"}]}], "]"}], ",", 
+           RowBox[{"XMLElement", "[", 
+            RowBox[{"\<\"img\"\>", ",", 
+             RowBox[{"{", 
+              
+              RowBox[{"\<\"src\"\>", 
+               "\[Rule]", "\<\"http://www.awesomeimages.com/1.png\"\>"}], 
+              "}"}], ",", 
+             RowBox[{"{", "\<\"\"\>", "}"}]}], "]"}], ",", 
+           RowBox[{"XMLElement", "[", 
+            RowBox[{"\<\"a\"\>", ",", 
+             RowBox[{"{", 
+              
+              RowBox[{"\<\"href\"\>", 
+               "\[Rule]", "\<\"http://www.google.com\"\>"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"XMLElement", "[", 
+               RowBox[{"\<\"h1\"\>", ",", 
+                RowBox[{"{", "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"\<\"Fuck Yeah!!!\"\>", ",", 
+                  RowBox[{"XMLElement", "[", 
+                   RowBox[{"\<\"span\"\>", ",", 
+                    RowBox[{"{", "}"}], ",", 
+                    RowBox[{"{", "\<\"and then some\"\>", "}"}]}], "]"}]}], 
+                 "}"}]}], "]"}], "}"}]}], "]"}]}], "}"}]}], "]"}]}], "}"}]}], 
+    "]"}], ",", 
+   RowBox[{"{", "}"}]}], "]"}]], "Output",
  CellChangeTimes->{
   3.5417154801738167`*^9, 3.5417155152582903`*^9, 3.5417158971676683`*^9, 
    3.541715969127378*^9, {3.541716822083975*^9, 3.541716842235236*^9}, 
@@ -77,8 +156,18 @@ Yeah!!!<span>and then some</span></h1>\\n  </a>\\n </body>\\n</html>\"\>"], \
    3.54171699412995*^9}, {3.541717097789473*^9, 3.541717105598164*^9}, 
    3.541717400211466*^9, 3.541763452198419*^9, 3.541763504895646*^9, {
    3.5417704172598248`*^9, 3.541770441197241*^9}, 3.541773043683929*^9, 
-   3.5417733379492483`*^9, 3.5417734819834623`*^9, 3.542218086673245*^9}]
+   3.5417733379492483`*^9, 3.5417734819834623`*^9, 3.542218086673245*^9, 
+   3.542452374846568*^9, 3.542458872327874*^9, 3.54245902640147*^9, {
+   3.5424605428560343`*^9, 3.542460559576035*^9}, {3.542460726451717*^9, 
+   3.542460748561902*^9}, {3.542460843637183*^9, 3.5424608683708363`*^9}, {
+   3.542460955115489*^9, 3.54246097353576*^9}, {3.5424612540043163`*^9, 
+   3.5424612939876747`*^9}, {3.542461348459087*^9, 3.542461363084859*^9}, 
+   3.542466339765912*^9, 3.542466425066894*^9, 3.542466542575337*^9, 
+   3.5424666507125187`*^9, 3.542466713866468*^9}]
 }, Open  ]],
+
+Cell[BoxData["R"], "Input",
+ CellChangeTimes->{3.542461704904765*^9}],
 
 Cell[CellGroupData[{
 
@@ -87,7 +176,9 @@ Cell[BoxData[
  CellChangeTimes->{{3.5422181026893578`*^9, 3.542218112352456*^9}}],
 
 Cell[BoxData["\<\"how-many-+things\"\>"], "Output",
- CellChangeTimes->{3.5422181127710247`*^9}]
+ CellChangeTimes->{
+  3.5422181127710247`*^9, {3.542452379594496*^9, 3.542452406082294*^9}, 
+   3.5424524562919188`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -139,12 +230,160 @@ Cell[BoxData[{
  RowBox[{"OptionsPattern", "[", "]"}], "\[IndentingNewLine]", 
  RowBox[{"Options", "[", "f", 
   "]"}], "\[IndentingNewLine]", "OptionValue"}], "Input",
- CellChangeTimes->{{3.542224774738406*^9, 3.54222478747155*^9}}]
+ CellChangeTimes->{{3.542224774738406*^9, 3.54222478747155*^9}}],
+
+Cell[BoxData["Op"], "Input",
+ CellChangeTimes->{{3.542457913656427*^9, 3.542457913912919*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Options", "[", "List", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{"src", " ", "\[Rule]", " ", "\"\<doesn't rock\>\""}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"OptionsPattern", "[", "]"}], "}"}], ",", "x_"}], "]"}], " ", ":=",
+    " ", 
+   RowBox[{
+    RowBox[{"ExportString", "[", 
+     RowBox[{"x", ",", " ", "\"\<text\>\""}], "]"}], "<>", "\"\<: \>\"", "<>", 
+    RowBox[{"OptionValue", "[", "src", "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"src", " ", "\[Rule]", " ", "\"\<rocks\>\""}], "}"}], ",", " ", 
+   "\"\<what\>\""}], " ", "]"}]}], "Input",
+ CellChangeTimes->{{3.5424579455444393`*^9, 3.542457958980733*^9}, {
+  3.542458289590467*^9, 3.5424585333741007`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Set", "::", "write"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Tag \[NoBreak]\\!\\(List\\)\[NoBreak] in \
+\[NoBreak]\\!\\(Options[List]\\)\[NoBreak] is Protected. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/write\\\", \
+ButtonNote -> \\\"Set::write\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.542458517527787*^9, 3.542458534211039*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"StringJoin", "::", "string"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"String expected at position \[NoBreak]\\!\\(2\\)\[NoBreak] \
+in \[NoBreak]\\!\\(\\\"what: \\\" <> \
+\\(\\(OptionValue[src]\\)\\)\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/StringJoin\\\", ButtonNote -> \
+\\\"StringJoin::string\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.542458517527787*^9, 3.542458534213305*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"StringJoin", "::", "string"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"String expected at position \[NoBreak]\\!\\(2\\)\[NoBreak] \
+in \[NoBreak]\\!\\(\\\"what: \\\" <> \
+\\(\\(OptionValue[src]\\)\\)\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/StringJoin\\\", ButtonNote -> \
+\\\"StringJoin::string\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.542458517527787*^9, 3.542458534215062*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\<\"what: \"\>", "<>", 
+  RowBox[{"OptionValue", "[", "src", "]"}]}]], "Output",
+ CellChangeTimes->{{3.542458511814947*^9, 3.542458534216403*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Options", "[", "f", "]"}]], "Input",
+ CellChangeTimes->{{3.542458623117136*^9, 3.542458626872747*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"src", "\[Rule]", "\<\"doesn't rock\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.542458627157997*^9}]
+}, Open  ]],
+
+Cell[BoxData["Html"], "Input",
+ CellChangeTimes->{{3.5424592768807364`*^9, 3.542459277173387*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.542461744020014*^9, 3.5424617534384117`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ToString", "[", 
+  RowBox[{
+   RowBox[{"Cos", "[", "x", "]"}], " ", "+", " ", 
+   RowBox[{"Sin", "[", "x", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5424626761874638`*^9, 3.542462689622698*^9}}],
+
+Cell[BoxData["\<\"Cos[x] + Sin[x]\"\>"], "Output",
+ CellChangeTimes->{3.5424626903750153`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OpenWrite", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.5424663679561243`*^9, 3.542466373957572*^9}}],
+
+Cell[BoxData[
+ RowBox[{"OutputStream", "[", 
+  RowBox[{"\<\"/tmp/m00000966431\"\>", ",", "61"}], "]"}]], "Output",
+ CellChangeTimes->{3.542466374363455*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Part", "[", 
+  RowBox[{"%", ",", " ", "1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.542466378781385*^9, 3.542466382694118*^9}}],
+
+Cell[BoxData["\<\"/tmp/m00000966431\"\>"], "Output",
+ CellChangeTimes->{3.542466383035459*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"<<", "Hyper`Graphics`"}]], "Input",
+ CellChangeTimes->{{3.542466442743565*^9, 3.542466446031888*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TempFileFor", "[", "something", "]"}]], "Input",
+ CellChangeTimes->{{3.542466451041678*^9, 3.542466489539524*^9}, 
+   3.5424665327396593`*^9}],
+
+Cell[BoxData["\<\"/tmp/m00001266431.file\"\>"], "Output",
+ CellChangeTimes->{{3.542466482688093*^9, 3.542466490211789*^9}, 
+   3.5424665335804462`*^9}]
+}, Open  ]]
 },
 WindowSize->{740, 756},
-WindowMargins->{{59, Automatic}, {105, Automatic}},
-FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
-2011)",
+WindowMargins->{{Automatic, 103}, {67, Automatic}},
+FrontEndVersion->"8.0 for Linux x86 (64-bit) (February 23, 2011)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -158,22 +397,54 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 279, 6, 43, "Input"],
+Cell[557, 20, 718, 14, 88, "Input"],
 Cell[CellGroupData[{
-Cell[861, 30, 1716, 33, 163, "Input"],
-Cell[2580, 65, 936, 14, 178, "Output"]
+Cell[1300, 38, 1715, 39, 202, "Input"],
+Cell[3018, 79, 3814, 86, 202, "Output"]
+}, Open  ]],
+Cell[6847, 168, 69, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[6941, 173, 153, 2, 30, "Input"],
+Cell[7097, 177, 172, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3553, 84, 153, 2, 27, "Input"],
-Cell[3709, 88, 95, 1, 27, "Output"]
+Cell[7306, 185, 223, 4, 50, "Input"],
+Cell[7532, 191, 651, 12, 64, "Message"],
+Cell[8186, 205, 651, 12, 63, "Message"],
+Cell[8840, 219, 303, 6, 30, "Output"]
+}, Open  ]],
+Cell[9158, 228, 231, 4, 69, "Input"],
+Cell[9392, 234, 94, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[9511, 239, 969, 28, 107, "Input"],
+Cell[10483, 269, 498, 10, 24, "Message"],
+Cell[10984, 281, 546, 11, 24, "Message"],
+Cell[11533, 294, 546, 11, 24, "Message"],
+Cell[12082, 307, 170, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3841, 94, 223, 4, 43, "Input"],
-Cell[4067, 100, 651, 12, 41, "Message"],
-Cell[4721, 114, 651, 12, 40, "Message"],
-Cell[5375, 128, 303, 6, 27, "Output"]
+Cell[12289, 315, 126, 2, 30, "Input"],
+Cell[12418, 319, 142, 3, 30, "Output"]
 }, Open  ]],
-Cell[5693, 137, 231, 4, 58, "Input"]
+Cell[12575, 325, 98, 1, 30, "Input"],
+Cell[12676, 328, 94, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[12795, 333, 224, 5, 30, "Input"],
+Cell[13022, 340, 94, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13153, 346, 125, 2, 30, "Input"],
+Cell[13281, 350, 156, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13474, 358, 151, 3, 30, "Input"],
+Cell[13628, 363, 94, 1, 30, "Output"]
+}, Open  ]],
+Cell[13737, 367, 125, 2, 30, "Input"],
+Cell[CellGroupData[{
+Cell[13887, 373, 166, 3, 30, "Input"],
+Cell[14056, 378, 151, 2, 30, "Output"]
+}, Open  ]]
 }
 ]
 *)
